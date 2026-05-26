@@ -3,6 +3,7 @@ import { useNavigate, Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import Swal from 'sweetalert2';
 import { LogIn, User, Lock, ArrowRight, Eye, EyeOff } from 'lucide-react';
+import loginIllustration from '../assets/login_illustration.png';
 
 const Login = () => {
   const { login, isAuthenticated } = useAuth();
@@ -181,7 +182,7 @@ const Login = () => {
         <div className="absolute inset-0 bg-black/10 mix-blend-overlay"></div>
         <div className="relative z-10 max-w-md w-full flex flex-col items-center text-center">
           <img
-            src="/src/assets/login_illustration.png"
+            src={loginIllustration}
             alt="ARPA Control Support"
             className="w-full max-w-sm object-contain rounded-3xl shadow-2xl border border-white/10 transform hover:scale-[1.02] transition-transform duration-500"
           />
