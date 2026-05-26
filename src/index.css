@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --color-violet-50: #ebf8ff;
+  --color-violet-100: #bee3f8;
+  --color-violet-200: #90cdf4;
+  --color-violet-300: #63b3ed;
+  --color-violet-400: #4299e1;
+  --color-violet-500: #2b6cb0; /* Brand Blue */
+  --color-violet-600: #1a365d; /* Tech Blue */
+  --color-violet-700: #2a4365;
+
+  --color-purple-500: #2b6cb0;
+  --color-purple-600: #1a365d;
+
+  --color-amber-500: #d69e2e; /* Dorado Calibrado */
+  --color-amber-600: #b7791f;
+
+  --color-slate-50: #f7fafc; /* Blanco Hueso / Off-White */
+  --color-slate-100: #edf2f7;
+  --color-slate-200: #e2e8f0;
+  --color-slate-300: #cbd5e1;
+  --color-slate-400: #a0aec0;
+  --color-slate-500: #718096;
+  --color-slate-600: #4a5568;
+  --color-slate-700: #2d3748; /* Gris Pizarra / Slate Gray */
+  --color-slate-800: #2d3748;
+  --color-slate-900: #1a202c;
+
+  --color-zinc-50: #f7fafc; /* Blanco Hueso / Off-White */
+  --color-zinc-100: #edf2f7;
+  --color-zinc-200: #e2e8f0;
+  --color-zinc-300: #cbd5e1;
+  --color-zinc-400: #a0aec0;
+  --color-zinc-500: #718096;
+  --color-zinc-600: #4a5568;
+  --color-zinc-700: #2d3748; /* Gris Pizarra / Slate Gray */
+  --color-zinc-800: #2d3748;
+  --color-zinc-900: #1a202c;
+}
+
+/* Estilos de scrollbar personalizados */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e2e8f0;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #cbd5e1;
+}
+
+/* Transiciones globales suaves */
+* {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
